@@ -1,2 +1,2 @@
-# kpi-qe-slides
+# kpi-slides
 Presentations for lectures at KPI on the subject of quality engineering
