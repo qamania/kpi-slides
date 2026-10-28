@@ -1,26 +1,42 @@
 <!doctype html>
 <html lang="uk">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Презентації Михайла Чуба з інженерії якості для лекцій у КПІ.">
-<meta name="theme-color" content="#faf8f3">
-<title>Інженерія якості — презентації · КПІ</title>
-<style>
-@font-face{font-family:Golos;src:url('intro-2026/assets/GolosText-Regular.ttf') format('truetype');font-display:swap}
-@font-face{font-family:Unbounded;src:url('intro-2026/assets/Unbounded-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
-*{box-sizing:border-box}body{margin:0;background:#faf8f3;color:#20262b;font-family:Golos,system-ui,sans-serif;line-height:1.6}main{max-width:1040px;margin:auto;padding:clamp(28px,7vw,88px) 24px}header{margin-bottom:48px}.eyebrow{color:#304ae3;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem}h1{font-family:Unbounded,system-ui,sans-serif;font-size:clamp(30px,6vw,60px);line-height:1.18;letter-spacing:-.04em;margin:20px 0}header p{max-width:640px;font-size:1.15rem;color:#596168}h2{font-size:1.6rem;margin:16px 0 10px}.card{display:block;padding:clamp(24px,4vw,40px);border:1px solid #d8d8d2;border-radius:16px;text-decoration:none;color:inherit;background:#fff}.card:hover{border-color:#304ae3}.card:focus-visible{outline:3px solid #304ae3;outline-offset:5px}.meta{font-size:.9rem;color:#596168}.card p{max-width:650px}.action{display:inline-block;margin-top:12px;color:#304ae3}footer{margin-top:48px;padding-top:24px;border-top:1px solid #d8d8d2;color:#596168;font-size:.9rem}footer a{color:inherit}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Презентації Михайла Чуба з інженерії якості для лекцій у КПІ.">
+  <meta name="theme-color" content="#faf8f3">
+  <title>Інженерія якості — презентації · КПІ</title>
+  <link rel="preload" href="intro-2026/assets/Unbounded-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="intro-2026/assets/GolosText-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body><main>
-<header><div class="eyebrow">КПІ · Михайло Чуб</div><h1>Інженерія якості</h1><p>Презентації до лекцій про якість програмних продуктів, дослідницьке мислення та роботу з AI.</p></header>
-<section aria-label="Презентації">
-<a class="card" href="intro-2026/">
-<div class="meta">26 жовтня 2026 · Вступ у спеціальність · 21 слайд</div>
-<h2>Усе працює*</h2>
-<p>Від підтвердження на екрані до довіри в реальному світі. Як змінюється професія Quality Engineer в епоху AI.</p>
-<span class="action">Відкрити презентацію →</span>
-</a>
-</section>
-<footer>Михайло Чуб · <a href="https://github.com/qamania/kpi-slides">Репозиторій на GitHub</a></footer>
-</main></body></html>
+<body>
+  <a class="skip-link" href="#main">До презентацій</a>
+  <div class="container">
+    <header class="masthead">
+      <span class="wordmark">КПІ <span class="wordmark-divider" aria-hidden="true">/</span> Презентації</span>
+      <span class="author">Михайло Чуб</span>
+    </header>
+    <main id="main">
+      <div class="hero">
+        <h1>Інженерія<br>якості</h1>
+        <p class="lead">Презентації до лекцій про якість програмних продуктів, дослідницьке мислення та роботу з AI.</p>
+      </div>
+      <section class="catalogue" aria-label="Презентації">
+        <a class="lecture" href="intro-2026/">
+          <div class="lecture-copy">
+            <div class="lecture-meta"><time datetime="2026-10-26">26 жовтня 2026</time><span>Вступ у спеціальність</span></div>
+            <h2>Усе працює*</h2>
+            <p class="lecture-description">Від підтвердження на екрані до довіри в реальному світі. Як змінюється професія Quality Engineer в епоху AI.</p>
+            <div class="lecture-open"><span class="action">Відкрити презентацію</span><span class="slide-count">21 слайд</span></div>
+          </div>
+          <figure class="lecture-preview">
+            <img src="assets/intro-2026-cover.jpg" width="1440" height="900" alt="Обкладинка презентації «Усе працює*»: А звідки ми знаємо?" fetchpriority="high">
+          </figure>
+        </a>
+      </section>
+    </main>
+    <footer class="colophon"><span>Михайло Чуб</span><a href="https://github.com/qamania/kpi-slides">Репозиторій на GitHub</a></footer>
+  </div>
+</body>
+</html>
